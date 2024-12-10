@@ -215,8 +215,8 @@
     </script>
 </head>
 <body>
-    
-    
+    <button class="theme-toggle" onclick="toggleTheme()">Gelap</button>
+
     <div class="slide active">
         <div class="title">Indra Prajoko, S.Pd., M.Pd</div>
         <div class="title"> & </div>
@@ -228,21 +228,9 @@
             <p>Dengan penuh suka cita, kami mengundang Anda untuk merayakan momen bahagia kami.</p>
         </div>
         <div class="button-container">
-            <button class="button" onclick="nextSlide()" onclick="unmuteAudio()">Buka Undangan</button>
+            <button class="button" onclick="nextSlide()">Buka Undangan</button>
         </div>
     </div>
-    <audio id="background-audio" autoplay loop muted>
-        <source src="marryyou.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung elemen audio.
-    </audio>
-    
-    <script>
-        function unmuteAudio() {
-            const audio = document.getElementById('background-audio');
-            audio.muted = false; // Menyalakan suara
-            audio.play(); // Memutar audioa
-        }
-    </script>
 
     <!-- Slide 1 -->
     <div class="slide">
@@ -282,7 +270,7 @@
             <div style="margin-top: 20px; font-size: 1.2em; font-weight: bold; color: var(--accent);">
                 Indra Prajoko, S.Pd., M.Pd & Dwi Wulan Apriliana
             </div>
-            <div class="content">
+            <div style="content">
                 Dengan penuh rasa syukur, kami yang berbahagia<br>memohon doa restu dari Bapak/Ibu/Saudara/i.
             </div>            
         </div>
